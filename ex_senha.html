@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var tentativas = 1
+
+    while (tentativas <= 3) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+
+        if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+
+            alert("Bem-vindo ao sistema " + loginInformado);
+
+            tentativas <= 3;
+
+
+        } else {
+
+            alert("Login inválido. Tente novamente");
+        }
+
+        if (tentativas == 3) {
+            alert("Número de tentativas maior que 3 , não é mais possível logar no sistema. ")
+
+            tentativas = tentativas + 1
+        }
+
+</script>
